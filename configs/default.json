@@ -1,0 +1,32 @@
+{
+  "seed": 20250912,
+  "dt_hours": 0.16666666666666666,
+  "capacity_kwh": 12000,
+  "energy_min_kwh": 1200,
+  "energy_max_kwh": 10800,
+  "initial_energy_kwh": 6000,
+  "roundtrip_efficiency": 0.9,
+  "efficiency_interpretation": "eta_charge=eta_discharge=sqrt(0.9)",
+  "power_limit_kw": 5000,
+  "power_measurement": "bus",
+  "free_curtailment": true,
+  "price_revelation": "current interval only; future A4 prices unknown",
+  "settlement": "effective plan at delivery price plus half delivery price times each absolute revision; emergency at five times delivery price",
+  "scenario_count": 6,
+  "grid_size": 41,
+  "terminal_factor": 0.9,
+  "bandwidth": 1.0,
+  "mode": "weekday",
+  "history_window_days": 84,
+  "revision_tolerance_cny": 0.01,
+  "physical_tolerance": 0.00001,
+  "warmup": "2025-01-01 through 2025-01-31 with fixed default parameters",
+  "calibration": "prespecified candidates evaluated by Jan 16-31 realized costs; activated Feb 1",
+  "candidates": [
+    {"mode": "yesterday", "bandwidth": 1.0},
+    {"mode": "lastweek", "bandwidth": 1.0},
+    {"mode": "weekday", "bandwidth": 0.5},
+    {"mode": "weekday", "bandwidth": 1.0},
+    {"mode": "weekday", "bandwidth": 2.0}
+  ]
+}

@@ -1,0 +1,46 @@
+test_adopted_unchanged_is_100_not_zero_and_unadopted_blank (test_contract.ResultsContractTests.test_adopted_unchanged_is_100_not_zero_and_unadopted_blank) ... ok
+test_corrupted_staging_metadata_is_rejected_before_replace (test_contract.ResultsContractTests.test_corrupted_staging_metadata_is_rejected_before_replace) ... ok
+test_invalid_physics_never_overwrites_template (test_contract.ResultsContractTests.test_invalid_physics_never_overwrites_template) ... ok
+test_more_than_one_emergency_appends_and_preserves_original_rows (test_contract.ResultsContractTests.test_more_than_one_emergency_appends_and_preserves_original_rows) ... ok
+test_cross_day_storage_continuity_rejects_reset (test_contract.SettlementAndPhysicsTests.test_cross_day_storage_continuity_rejects_reset) ... ok
+test_event_merge_split_midnight_and_no_event (test_contract.SettlementAndPhysicsTests.test_event_merge_split_midnight_and_no_event) ... ok
+test_frozen_revision_and_simultaneous_flows_rejected (test_contract.SettlementAndPhysicsTests.test_frozen_revision_and_simultaneous_flows_rejected) ... ok
+test_future_forecast_and_history_rejected (test_contract.SettlementAndPhysicsTests.test_future_forecast_and_history_rejected) ... ok
+test_multiple_revisions_only_charge_signed_changes_and_fees (test_contract.SettlementAndPhysicsTests.test_multiple_revisions_only_charge_signed_changes_and_fees) ... ok
+test_reduction_100_to_80_costs_90 (test_contract.SettlementAndPhysicsTests.test_reduction_100_to_80_costs_90) ... ok
+test_cross_day_continuation_never_resets_inventory (test_optimization.OptimizationTests.test_cross_day_continuation_never_resets_inventory) ... ok
+test_downward_revision_total_is_ninety (test_optimization.OptimizationTests.test_downward_revision_total_is_ninety) ... ok
+test_execution_cannot_charge_using_emergency_and_respects_capacity (test_optimization.OptimizationTests.test_execution_cannot_charge_using_emergency_and_respects_capacity) ... ok
+test_fixed_plan_scenario_balances_are_distinct (test_optimization.OptimizationTests.test_fixed_plan_scenario_balances_are_distinct) ... ok
+test_invalid_weights_and_future_price_placeholders_rejected (test_optimization.OptimizationTests.test_invalid_weights_and_future_price_placeholders_rejected) ... ok
+test_lp_repair_preserves_inventory_and_balance (test_optimization.OptimizationTests.test_lp_repair_preserves_inventory_and_balance) ... ok
+test_milp_and_repaired_lp_have_equal_cyclic_cost (test_optimization.OptimizationTests.test_milp_and_repaired_lp_have_equal_cyclic_cost) ... ok
+test_opportunity_value_reserves_energy_for_expensive_deficit (test_optimization.OptimizationTests.test_opportunity_value_reserves_energy_for_expensive_deficit) ... ok
+test_terminal_piecewise_cost_is_not_actual_bill (test_optimization.OptimizationTests.test_terminal_piecewise_cost_is_not_actual_bill) ... ok
+test_high_price_and_shortage_joint_tail_changes_procurement (test_theory.EconomicBenchmarks.test_high_price_and_shortage_joint_tail_changes_procurement) ... ok
+test_no_storage_asymmetric_cost_selects_eightieth_quantile (test_theory.EconomicBenchmarks.test_no_storage_asymmetric_cost_selects_eightieth_quantile) ... ok
+test_revision_downward_contract_example (test_theory.EconomicBenchmarks.test_revision_downward_contract_example) ... ok
+test_revision_seventieth_to_ninetieth_quantile_band (test_theory.EconomicBenchmarks.test_revision_seventieth_to_ninetieth_quantile_band) ... ok
+test_unused_information_cannot_worsen_the_exact_feasible_optimum (test_theory.EconomicBenchmarks.test_unused_information_cannot_worsen_the_exact_feasible_optimum) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.387s
+
+OK
+result2: 2025-01-01, E=5587.818, elapsed=0.1s
+result4-2: 2025-01-01, E=5655.957, elapsed=0.1s
+result3: 2025-01-01, E=9919.019, elapsed=0.6s
+result2: 2025-01-31, E=1694.012, elapsed=1.6s
+result4-2: 2025-01-31, E=1689.278, elapsed=1.6s
+result2: 2025-02-04, E=1622.611, elapsed=1.9s
+result4-2: 2025-02-04, E=1610.984, elapsed=1.9s
+VERIFIED result2: {'result_id': 'result2', 'passed': True, 'days': 35, 'first_day': '2025-01-01', 'last_day': '2025-02-04', 'tolerance_kwh': 1e-05, 'max_balance_error_kwh': 4.547473508864641e-13, 'max_storage_error_kwh': 1.1368683772161603e-13, 'max_continuity_error_kwh': 0.0, 'max_simultaneous_kwh': 0.0, 'max_version_error_kwh': 0.0, 'max_ledger_error_cny': 0.0, 'max_event_error_kwh': 2.2538415578310378e-11, 'information_audit': {'decisions': 140, 'forecast_issue_checks': 0, 'historical_day_checks': 892, 'weight_checks': 140, 'reveal_checks': 140, 'solver_checks': 280}, 'total_cost_all_days': 2140886.3206348, 'independent_of_optimizer_objective': True}
+VERIFIED result4-2: {'result_id': 'result4-2', 'passed': True, 'days': 35, 'first_day': '2025-01-01', 'last_day': '2025-02-04', 'tolerance_kwh': 1e-05, 'max_balance_error_kwh': 4.547473508864641e-13, 'max_storage_error_kwh': 1.1368683772161603e-13, 'max_continuity_error_kwh': 0.0, 'max_simultaneous_kwh': 0.0, 'max_version_error_kwh': 0.0, 'max_ledger_error_cny': 0.0, 'max_event_error_kwh': 2.6147972675971687e-11, 'information_audit': {'decisions': 140, 'forecast_issue_checks': 0, 'historical_day_checks': 892, 'weight_checks': 140, 'reveal_checks': 140, 'solver_checks': 280}, 'total_cost_all_days': 2476380.7580518415, 'independent_of_optimizer_objective': True}
+result3: 2025-01-31, E=1819.030, elapsed=3.5s
+result3: 2025-02-04, E=1510.243, elapsed=4.0s
+VERIFIED result3: {'result_id': 'result3', 'passed': True, 'days': 35, 'first_day': '2025-01-01', 'last_day': '2025-02-04', 'tolerance_kwh': 1e-05, 'max_balance_error_kwh': 2.2737367544323206e-13, 'max_storage_error_kwh': 1.1368683772161603e-13, 'max_continuity_error_kwh': 0.0, 'max_simultaneous_kwh': 0.0, 'max_version_error_kwh': 0.0, 'max_ledger_error_cny': 1.4551915228366852e-11, 'max_event_error_kwh': 2.3732127374387346e-11, 'information_audit': {'decisions': 140, 'forecast_issue_checks': 140, 'historical_day_checks': 892, 'weight_checks': 140, 'reveal_checks': 140, 'solver_checks': 280}, 'total_cost_all_days': 2078286.4205356129, 'independent_of_optimizer_objective': True}
+result4-3: 2025-01-01, E=9902.201, elapsed=0.6s
+result4-3: 2025-01-31, E=1856.236, elapsed=3.5s
+result4-3: 2025-02-04, E=1437.700, elapsed=3.9s
+VERIFIED result4-3: {'result_id': 'result4-3', 'passed': True, 'days': 35, 'first_day': '2025-01-01', 'last_day': '2025-02-04', 'tolerance_kwh': 1e-05, 'max_balance_error_kwh': 2.2737367544323206e-13, 'max_storage_error_kwh': 1.1368683772161603e-13, 'max_continuity_error_kwh': 0.0, 'max_simultaneous_kwh': 0.0, 'max_version_error_kwh': 0.0, 'max_ledger_error_cny': 1.4551915228366852e-11, 'max_event_error_kwh': 2.1188384380366188e-11, 'information_audit': {'decisions': 140, 'forecast_issue_checks': 140, 'historical_day_checks': 892, 'weight_checks': 140, 'reveal_checks': 140, 'solver_checks': 280}, 'total_cost_all_days': 2379521.348628167, 'independent_of_optimizer_objective': True}
+Completed stage: smoke

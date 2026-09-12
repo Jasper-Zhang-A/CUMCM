@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Reproducible execution caches and local recovery copies.
+/cache/*
+!/cache/calibration.json

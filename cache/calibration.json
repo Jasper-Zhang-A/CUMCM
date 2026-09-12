@@ -1,0 +1,110 @@
+{
+  "q2": {
+    "selected": {
+      "mode": "weekday",
+      "bandwidth": 0.5
+    },
+    "candidates": [
+      {
+        "candidate": {
+          "mode": "yesterday",
+          "bandwidth": 1.0
+        },
+        "validation_cost_cny": 967480.6925339653,
+        "initial_energy_kwh": 1488.053291248716,
+        "final_energy_kwh": 10026.82330433606
+      },
+      {
+        "candidate": {
+          "mode": "lastweek",
+          "bandwidth": 1.0
+        },
+        "validation_cost_cny": 790486.5323380319,
+        "initial_energy_kwh": 1488.053291248716,
+        "final_energy_kwh": 1458.0735698063545
+      },
+      {
+        "candidate": {
+          "mode": "weekday",
+          "bandwidth": 0.5
+        },
+        "validation_cost_cny": 776845.898530043,
+        "initial_energy_kwh": 1488.053291248716,
+        "final_energy_kwh": 1691.6429717704316
+      },
+      {
+        "candidate": {
+          "mode": "weekday",
+          "bandwidth": 1.0
+        },
+        "validation_cost_cny": 776877.9840587818,
+        "initial_energy_kwh": 1488.053291248716,
+        "final_energy_kwh": 1694.0124768050082
+      },
+      {
+        "candidate": {
+          "mode": "weekday",
+          "bandwidth": 2.0
+        },
+        "validation_cost_cny": 779352.3740036146,
+        "initial_energy_kwh": 1488.053291248716,
+        "final_energy_kwh": 1694.0124768050082
+      }
+    ],
+    "available_at": "2025-02-01T00:00:00"
+  },
+  "q4": {
+    "selected": {
+      "mode": "weekday",
+      "bandwidth": 0.5
+    },
+    "candidates": [
+      {
+        "candidate": {
+          "mode": "yesterday",
+          "bandwidth": 1.0
+        },
+        "validation_cost_cny": 1060123.8740737892,
+        "initial_energy_kwh": 1253.7876753019395,
+        "final_energy_kwh": 8874.848274354164
+      },
+      {
+        "candidate": {
+          "mode": "lastweek",
+          "bandwidth": 1.0
+        },
+        "validation_cost_cny": 924226.9584059089,
+        "initial_energy_kwh": 1253.7876753019395,
+        "final_energy_kwh": 2034.2956460037267
+      },
+      {
+        "candidate": {
+          "mode": "weekday",
+          "bandwidth": 0.5
+        },
+        "validation_cost_cny": 874096.3716106819,
+        "initial_energy_kwh": 1253.7876753019395,
+        "final_energy_kwh": 1690.113061239198
+      },
+      {
+        "candidate": {
+          "mode": "weekday",
+          "bandwidth": 1.0
+        },
+        "validation_cost_cny": 886620.4352969147,
+        "initial_energy_kwh": 1253.7876753019395,
+        "final_energy_kwh": 1689.27827517826
+      },
+      {
+        "candidate": {
+          "mode": "weekday",
+          "bandwidth": 2.0
+        },
+        "validation_cost_cny": 894815.7617674703,
+        "initial_energy_kwh": 1253.7876753019395,
+        "final_energy_kwh": 1690.6776657746245
+      }
+    ],
+    "available_at": "2025-02-01T00:00:00"
+  }
+}

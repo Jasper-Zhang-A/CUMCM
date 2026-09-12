@@ -1,0 +1,77 @@
+{
+  "python": "3.11.15 (main, Mar 11 2026, 17:20:07) [GCC 14.3.0]",
+  "executable": "/home/jasper/miniconda3/envs/tslib/bin/python",
+  "packages": {
+    "numpy": "2.1.2",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "matplotlib": "3.10.8"
+  },
+  "solver": "SciPy HiGHS 1.8.0; one thread per optimizer",
+  "config": {
+    "seed": 20250912,
+    "dt_hours": 0.16666666666666666,
+    "capacity_kwh": 12000,
+    "energy_min_kwh": 1200,
+    "energy_max_kwh": 10800,
+    "initial_energy_kwh": 6000,
+    "roundtrip_efficiency": 0.9,
+    "efficiency_interpretation": "eta_charge=eta_discharge=sqrt(0.9)",
+    "power_limit_kw": 5000,
+    "power_measurement": "bus",
+    "free_curtailment": true,
+    "price_revelation": "current interval only; future A4 prices unknown",
+    "settlement": "effective plan at delivery price plus half delivery price times each absolute revision; emergency at five times delivery price",
+    "scenario_count": 6,
+    "grid_size": 41,
+    "terminal_factor": 0.9,
+    "bandwidth": 1.0,
+    "mode": "weekday",
+    "history_window_days": 84,
+    "revision_tolerance_cny": 0.01,
+    "physical_tolerance": 1e-05,
+    "warmup": "2025-01-01 through 2025-01-31 with fixed default parameters",
+    "calibration": "prespecified candidates evaluated by Jan 16-31 realized costs; activated Feb 1",
+    "candidates": [
+      {
+        "mode": "yesterday",
+        "bandwidth": 1.0
+      },
+      {
+        "mode": "lastweek",
+        "bandwidth": 1.0
+      },
+      {
+        "mode": "weekday",
+        "bandwidth": 0.5
+      },
+      {
+        "mode": "weekday",
+        "bandwidth": 1.0
+      },
+      {
+        "mode": "weekday",
+        "bandwidth": 2.0
+      }
+    ]
+  },
+  "input_sha256": "89d65b8c047b6738d1b8db8f070bf73ecad92cad12de9341efb0c1fa5577891e",
+  "source_sha256": {
+    "src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/forecasting.py": "004c44067baf70e06b158945e998734115f3980be8d4fcbbfc966853927aa7d5",
+    "src/optimization.py": "8f26dcb40fa060fc07a8d9e3f475ec36f0654e58c57c115cbbf26304214c2b3d",
+    "src/reporting.py": "d59d938d4db6c82552bc42febbc652a56c1776ea082908742751a65bfd3d0494",
+    "src/results.py": "d354abd2b306cbbcc7b82bcba8d7df2c5963c15422707be0fff0541126c04b6a",
+    "src/simulation.py": "c81b9129a49de051277d49010d093fc1738ae97548fb241ee785627b728a61d5",
+    "src/verification.py": "b10254451ca79f5715a5d55f7697dc46f7cbe7850b30bf8453ca7543140c6339",
+    "scripts/run_all.py": "08d632134739adbb2b87897b799310e3356e4a18e70e7b8cbf1040ffc0da8491",
+    "tests/test_contract.py": "ede4981de6932cdecd6bd7621db3926b2992a5689ed29edc8b7fa2b0b0825073",
+    "tests/test_forecasting.py": "4673a172d31dc071711f9daa2892a6802039a22bab1c530484c6b88ce74db67b",
+    "tests/test_optimization.py": "7cd15d0e923492f6cf91f77a509d1f9db7dc37b8e0f1158143e887210c3254b2",
+    "tests/test_simulation.py": "362c65884bee5ebbe5049eaac24baffa81c041856ff8ba553e1d2885957315ad",
+    "tests/test_theory.py": "9c62296aecca63c45c1a2e3629248a23503bd191b79ad53b4506409e5ddc1687",
+    "configs/default.json": "5caefad2fa1ddf55362d633dc684fded0d0bb33b810f06e3273e1883fdff1362"
+  },
+  "stage": "reports",
+  "generated_at": "2026-09-12T18:52:54+0800"
+}
