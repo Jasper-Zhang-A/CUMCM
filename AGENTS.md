@@ -177,3 +177,5 @@ D_E(i,j)=\max_{1\le k\le H}\left|\sum_{t=1}^{k}
 消融实验保持基准预测、信息集、结算及初始状态可比，分别检验：独立误差与整段误差、普通日块与星期对齐、静态权重与条件更新、缺口优先放电与机会价值、零点计划与经济阈值修订、价格独立抽样与联合抽样。调参只用历史验证，最终比较实际总费用，同时报告紧急购电、调整费用、弃余电量、期末库存与运行时间，不能把不同末端库存直接算作节费收益。
 
 交付可复现代码、已核验的统一CSV，以及 `reports/model.md`（公式、假设、借鉴来源）、`reports/validation.md`（核验结果与未完成项）、`reports/comparison.md`（基线、消融及题目指定日期表格）。所有数值结论来自本次可复现计算，不复制对话中的提升比例，不预设创新方法一定优于基线。
+
+- **Python environment:** use `/home/jasper/miniconda3/envs/tslib/bin/python` for this project.
